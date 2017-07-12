@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>SHOW ME WHAT YOU GOT | Rick and Morty survey</title>
+    <!-- CDN link to run tests for freeCodeCamp -->
+    <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+
+    <!-- font-family: 'Bungee', cursive;
+         font-family: 'Source Code Pro', monospace; -->
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Code+Pro" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="theme.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+  </head>
+
+  <body>
+  <div class="container">
+    <center><div class="center>"><img src="http://i.imgur.com/TVUTLAl.png">
+    <h1 id="title">Show me what you got</h1></div></center>
+  </div>
+
+  <p id="description">Welcome, fellow human! Please let us know how you have been enjoying Rick and Morty so far.</p>
+
+  <form id="survey-form" action="data.php" method="post">
+    <div class="wrapper">
+      <label id="name-label" class="question" for="name" name="name">* Identify yourself</label><br>
+      <input id="name" class="answer" type="text" placeholder="They call me..." required><br>
+    </div>
+
+    <br>
+
+    <div class="wrapper">
+      <label id="email-label" class="question" for="email">* Email</label><br>
+      <input id="email" class="answer" type="email" placeholder="your@email.here" required><br>
+    </div>
+
+    <br>
+
+    <div class="wrapper">
+      <label id="number-label" class="question" for="number">How old are you?</label><br>
+      <input id="number" name="age" class="answer" type="number" min="0" max="117" placeholder="60"><br>
+    </div>
+
+    <br>
+
+    <div class="wrapper">
+      <span class="question">What is your purpose?</span><br>
+      <select id="dropdown" class="answer">
+        <option value="child">Child</option>
+        <option value="studet">Student</option>
+        <option value="military">Military</option>
+        <option value="unemployed">Unemployed</option>
+        <option value="self_employed">Self employed</option>
+        <option value="some_professional">Some professional</option>
+        <option value="butter">To pass butter</option>
+        <option value="retired">Retired</option>
+      </select><br>
+    </div>
+
+    <br>
+
+    <div class="wrapper">
+      <span class="question">Who is your favorite character?</span><br><br>
+      <div class="answer">
+        <input type="radio" name="fav_char" value="beth">Beth<br>
+        <input type="radio" name="fav_char" value="birdperson">Birdperson<br>
+        <input type="radio" name="fav_char" value="dr_xenon_bloom">Dr. Xenon Bloom<br>
+        <input type="radio" name="fav_char" value="evil_morty">Evil Morty<br>
+        <input type="radio" name="fav_char" value="fart">Fart<br>
+        <input type="radio" name="fav_char" value="ice_t">Ice-T<br>
+        <input type="radio" name="fav_char" value="jessica">Jessica<br>
+        <input type="radio" name="fav_char" value="krombopulos_michael">Krombopulos Michael<br>
+        <input type="radio" name="fav_char" value="morty">Morty<br>
+        <input type="radio" name="fav_char" value="morty_jr">Morty Jr.<br>
+        <input type="radio" name="fav_char" value="mr_poopybutthole">Mr. Poopybutthole<br>
+        <input type="radio" name="fav_char" value="mr_meeseeks">Mr. Meeseeks<br>
+        <input type="radio" name="fav_char" value="pencilvester">Pencilvester<br>
+        <input type="radio" name="fav_char" value="pickle_rick">Pickle Rick<br>
+        <input type="radio" name="fav_char" value="rick">Rick<br>
+        <input type="radio" name="fav_char" value="scary_terry">Scary Terry<br>
+        <input type="radio" name="fav_char" value="snuffles_snowball">Snuffles/Snowball<br>
+        <input type="radio" name="fav_char" value="squanchy">Squanchy<br>
+        <input type="radio" name="fav_char" value="summer">Summer<br>
+        <input type="radio" name="fav_char" value="tammy" disabled>Tammy<br>
+        <input type="radio" name="fav_char" value="tiny_rick">Tiny Rick<br>
+        <input type="radio" name="fav_char" value="unity">Unity<br>
+        <input type="radio" name="fav_char" value="zeep_xanflorp">Zeep Xanflorp<br>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="wrapper">
+      <span class="question">What is your favorite episode?</span><br>
+      <div class="answer">
+        <input type="radio" name="fav_ep" value="s1e1">Pilot<br>
+        <input type="radio" name="fav_ep" value="s1e2">Lawnmower Dog<br>
+        <input type="radio" name="fav_ep" value="s1e3">Anatomy Park<br>
+        <input type="radio" name="fav_ep" value="s1e4">M. Night Shaym-Aliens!<br>
+        <input type="radio" name="fav_ep" value="s1e5">Meeseeks and Destroy<br>
+        <input type="radio" name="fav_ep" value="s1e6">Rick Potion #9<br>
+        <input type="radio" name="fav_ep" value="s1e7">Raising Gazorpazorp<br>
+        <input type="radio" name="fav_ep" value="s1e8">Rixty Minutes<br>
+        <input type="radio" name="fav_ep" value="s1e9">Something Ricked This Way Comes<br>
+        <input type="radio" name="fav_ep" value="s1e10">Close Rick-counters of the Rick Kind<br>
+        <input type="radio" name="fav_ep" value="s1e11">Ricksy Business<br>
+        <input type="radio" name="fav_ep" value="s2e1">A Rickle in Time<br>
+        <input type="radio" name="fav_ep" value="s2e2">Mortynight Run<br>
+        <input type="radio" name="fav_ep" value="s2e3">Auto Erotic Assimilation<br>
+        <input type="radio" name="fav_ep" value="s2e4">Total Rickall<br>
+        <input type="radio" name="fav_ep" value="s2e5">Get Schwifty<br>
+        <input type="radio" name="fav_ep" value="s2e6">The Ricks Must Be Crazy<br>
+        <input type="radio" name="fav_ep" value="s2e7">Big Trouble in Little Sanchez<br>
+        <input type="radio" name="fav_ep" value="s2e8">Interdimentional Cable 2: Tempting Fate<br>
+        <input type="radio" name="fav_ep" value="s2e9">Look Who's Purging Now<br>
+        <input type="radio" name="fav_ep" value="s2e10">The Wedding Squanchers<br>
+        <input type="radio" name="fav_ep" value="s3e1">The Rickshank Rickdemption<br>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="wrapper">
+      <span class="question">Best part about a plumbus?</span><br>
+      <span class="answer">
+        <input type="checkbox" name="plumbus" value="chumble">Chumble<br>
+        <input type="checkbox" name="plumbus" value="dingle_bop">Dingle bop<br>
+        <input type="checkbox" name="plumbus" value="fleeb">Fleeb<br>
+        <input type="checkbox" name="plumbus" value="floob">Floob<br>
+        <input type="checkbox" name="plumbus" value="frood_noops">Frood noops<br>
+        <input type="checkbox" name="plumbus" value="grodus">Grodus<br>
+        <input type="checkbox" name="plumbus" value="grumbles">Grumbles<br>
+        <input type="checkbox" name="plumbus" value="grumbo">Grumbo<br>
+      </span>
+    </div>
+
+    <br>
+
+    <div class="wrapper">
+      <span class="question">How many mega seeds can you hold?</span><br>
+      <input class="answer" type="text"><br>
+    </div>
+
+    <br>
+
+    <div class="wrapper">
+      <span class="question">How would you describe Rick and Morty to a friend?</span><br>
+      <textarea class="answer"></textarea><br>
+    </div>
+
+    <br>
+
+    <center><button id="submit" type="submit" form="survey-form">Submit</button></center>
+  </form>
+  </body>
+
+</html>
+
+<!--
+
+1. h1 element has id="title" with title
+2. p element has id="description" with short description
+3. for elemenet has id="survey-form" that contains all other form elements
+4. required to enter name in a field with id="name"
+5. required to ender email in a field with id="email"
+6. if email is not formatted correctly, you will see an HTML5 validation error
+7. can enter a number in a field with id="number"
+8. if a non-number is entered in the number field, you will see an HTML5 eror
+9. if a number is entered outside of a range of numbers, HTML5 error
+10. name/email/number input fields have corresponding labels that describe the purpose of each field with the following ids "name-label"/"email-label"/"number-label"
+11. name/email/number input fields have placeholder text
+12. form has a dropdown menu to select from id="dropdown"
+13. form has more than one group of radio buttons to select from, each group with own name
+14. form has checkboxes
+15. form has <textarea> for additional comments
+16. button element with id="submit" to submit inputs
+
+-->
